@@ -1,0 +1,782 @@
+<!doctype html>
+<html lang="et">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>BYD laos Tartus – 4 eripakkumist | Inchcape Tartu BYD</title>
+  <meta name="description" content="4 BYD laos Tartus: Seal U DM-i Boost (Pistikhübriid), Sealion 7 Design AWD, Atto 3 Design ja Seal Design. Broneeri proovisõit või küsi pakkumist." />
+  <meta name="theme-color" content="#0B1220" />
+  <style>
+    :root{
+      --bg:#070B16;
+      --panel:#0B1220;
+      --card:#0F1A33;
+      --text:#EAF0FF;
+      --muted:#B7C3E6;
+      --line:rgba(255,255,255,.10);
+      --accent:#2A7CFF;
+      --accent2:#00D4FF;
+      --ok:#4ADE80;
+      --warn:#FBBF24;
+      --shadow: 0 18px 60px rgba(0,0,0,.45);
+      --radius: 18px;
+      --radius2: 26px;
+      --max: 1120px;
+      --font: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial, "Noto Sans", "Helvetica Neue", sans-serif;
+    }
+    *{box-sizing:border-box}
+    html,body{height:100%}
+    body{
+      margin:0;
+      font-family:var(--font);
+      background:
+        radial-gradient(1200px 600px at 80% -20%, rgba(42,124,255,.35), transparent 65%),
+        radial-gradient(900px 600px at 15% 0%, rgba(0,212,255,.22), transparent 55%),
+        radial-gradient(900px 700px at 70% 110%, rgba(42,124,255,.18), transparent 55%),
+        linear-gradient(180deg, #050813 0%, #070B16 50%, #050813 100%);
+      color:var(--text);
+      overflow-x:hidden;
+    }
+    a{color:inherit}
+    .container{max-width:var(--max); margin:0 auto; padding:0 18px}
+    .nav{
+      position:sticky; top:0; z-index:30;
+      backdrop-filter: blur(10px);
+      background: rgba(7,11,22,.60);
+      border-bottom:1px solid var(--line);
+    }
+    .nav-inner{
+      display:flex; align-items:center; justify-content:space-between;
+      padding:14px 0;
+      gap:14px;
+    }
+    .brand{
+      display:flex; align-items:center; gap:10px; text-decoration:none;
+    }
+    .logo{
+      width:38px; height:38px; border-radius:12px;
+      background: linear-gradient(135deg, var(--accent) 0%, var(--accent2) 100%);
+      box-shadow: 0 10px 28px rgba(42,124,255,.35);
+      position:relative;
+    }
+    .logo:after{
+      content:"";
+      position:absolute; inset:10px;
+      border-radius:10px;
+      background: rgba(7,11,22,.70);
+      border:1px solid rgba(255,255,255,.18);
+    }
+    .brand strong{font-size:14px; letter-spacing:.3px}
+    .brand span{display:block; font-size:12px; color:var(--muted)}
+    .nav-links{
+      display:flex; gap:10px; align-items:center; flex-wrap:wrap; justify-content:flex-end;
+    }
+    .chip{
+      text-decoration:none;
+      padding:10px 12px;
+      border:1px solid var(--line);
+      border-radius:999px;
+      font-size:13px;
+      color:var(--muted);
+      background: rgba(255,255,255,.04);
+      transition:.2s ease;
+    }
+    .chip:hover{transform: translateY(-1px); border-color: rgba(42,124,255,.35); color:var(--text)}
+    .btn{
+      display:inline-flex; align-items:center; justify-content:center; gap:10px;
+      padding:12px 14px;
+      border-radius:999px;
+      border:1px solid rgba(42,124,255,.45);
+      background: linear-gradient(135deg, rgba(42,124,255,.95), rgba(0,212,255,.78));
+      color:#061023;
+      font-weight:700;
+      text-decoration:none;
+      box-shadow: 0 14px 34px rgba(42,124,255,.28);
+      transition:.18s ease;
+      white-space:nowrap;
+      cursor:pointer;
+    }
+    .btn:hover{transform: translateY(-1px); filter:saturate(1.05)}
+    .btn.secondary{
+      background: rgba(255,255,255,.05);
+      color: var(--text);
+      border-color: var(--line);
+      box-shadow:none;
+    }
+    .hero{
+      padding:34px 0 28px;
+    }
+    .hero-grid{
+      display:grid;
+      grid-template-columns: 1fr;
+      gap:22px;
+      align-items:stretch;
+    }
+    @media (max-width: 900px){
+      .hero-grid{grid-template-columns: 1fr; gap:16px;}
+      .nav-links{justify-content:flex-start}
+    }
+    .hero-card{
+      border:1px solid var(--line);
+      background: linear-gradient(180deg, rgba(255,255,255,.05), rgba(255,255,255,.02));
+      border-radius: var(--radius2);
+      box-shadow: var(--shadow);
+      padding:28px;
+      position:relative;
+      overflow:hidden;
+    }
+    .hero-card:before{
+      content:"";
+      position:absolute; inset:-80px -120px auto auto;
+      width:260px; height:260px;
+      background: radial-gradient(circle at 30% 30%, rgba(0,212,255,.45), transparent 60%);
+      transform: rotate(18deg);
+      pointer-events:none;
+    }
+    .kicker{
+      display:inline-flex; align-items:center; gap:10px;
+      padding:8px 12px;
+      border:1px solid rgba(255,255,255,.12);
+      border-radius:999px;
+      background: rgba(255,255,255,.04);
+      color: var(--muted);
+      font-size:13px;
+    }
+    .kicker i{
+      width:10px; height:10px; border-radius:99px;
+      background: var(--ok);
+      box-shadow: 0 0 0 6px rgba(74,222,128,.18);
+    }
+    h1{
+      margin:14px 0 10px;
+      font-size: 42px;
+      line-height:1.05;
+      letter-spacing:-.8px;
+    }
+    @media (max-width: 520px){h1{font-size:34px}}
+    .lead{
+      margin:0 0 18px;
+      color: var(--muted);
+      font-size:16px;
+      line-height:1.6;
+      max-width: 56ch;
+    }
+    .hero-actions{display:flex; gap:10px; flex-wrap:wrap; margin-top:14px}
+    .trust{
+      margin-top:16px;
+      display:flex; gap:12px; flex-wrap:wrap;
+      color: var(--muted);
+      font-size:13px;
+    }
+    .trust b{color:var(--text)}
+    .stat{
+      border:1px solid var(--line);
+      background: rgba(255,255,255,.03);
+      border-radius: 16px;
+      padding:12px 14px;
+      display:flex; flex-direction:column; gap:6px;
+      min-width: 170px;
+    }
+    .stat .big{font-size:18px; font-weight:800; letter-spacing:-.2px}
+    .stat .small{font-size:12px; color:var(--muted)}
+    .side{
+      border:1px solid var(--line);
+      background: rgba(11,18,32,.55);
+      border-radius: var(--radius2);
+      padding:18px;
+      box-shadow: var(--shadow);
+    }
+    .side h3{margin:6px 0 10px; font-size:16px}
+    .side p{margin:0 0 12px; color:var(--muted); font-size:13px; line-height:1.6}
+    .bullets{display:grid; gap:10px; margin-top:10px}
+    .bullet{
+      border:1px solid var(--line);
+      background: rgba(255,255,255,.03);
+      border-radius: 16px;
+      padding:12px;
+      display:flex; gap:10px; align-items:flex-start;
+    }
+    .dot{
+      width:28px; height:28px; border-radius:12px;
+      background: rgba(42,124,255,.18);
+      border:1px solid rgba(42,124,255,.35);
+      display:flex; align-items:center; justify-content:center;
+      color: var(--accent2);
+      font-weight:900;
+      flex: 0 0 auto;
+    }
+    .bullet strong{display:block; font-size:13px}
+    .bullet span{display:block; font-size:12px; color:var(--muted); margin-top:3px}
+    section{padding:22px 0}
+    .section-title{
+      display:flex; align-items:end; justify-content:space-between;
+      gap:12px; flex-wrap:wrap;
+      margin-bottom:12px;
+    }
+    .section-title h2{
+      margin:0;
+      font-size:22px;
+      letter-spacing:-.3px;
+    }
+    .section-title p{margin:0; color:var(--muted); font-size:13px; max-width:64ch}
+    .grid{
+      display:grid;
+      grid-template-columns: repeat(12, 1fr);
+      gap:14px;
+    }
+    .card{
+      grid-column: span 6;
+      display:flex;
+      flex-direction:column;
+      border:1px solid var(--line);
+      background: linear-gradient(180deg, rgba(255,255,255,.05), rgba(255,255,255,.02));
+      border-radius: var(--radius);
+      padding:16px;
+      box-shadow: 0 12px 40px rgba(0,0,0,.35);
+      position:relative;
+      overflow:hidden;
+    }
+    .card:before{
+      content:"";
+      position:absolute; inset:-120px auto auto -120px;
+      width:220px; height:220px;
+      background: radial-gradient(circle at 30% 30%, rgba(42,124,255,.26), transparent 62%);
+      pointer-events:none;
+    }
+    @media (max-width: 900px){ .card{grid-column: span 12;} }
+    .tagrow{display:flex; gap:8px; flex-wrap:wrap; margin:10px 0 10px}
+    .tag{
+      font-size:12px;
+      padding:6px 10px;
+      border-radius:999px;
+      border:1px solid var(--line);
+      background: rgba(255,255,255,.03);
+      color: var(--muted);
+    }
+    .tag.good{border-color: rgba(74,222,128,.30); background: rgba(74,222,128,.08); color:#D8FFE6}
+    .tag.hot{border-color: rgba(251,191,36,.30); background: rgba(251,191,36,.10); color:#FFF3D1}
+    .head{
+      display:flex; align-items:flex-start; justify-content:space-between; gap:10px;
+    }
+    .model{
+      font-weight:900;
+      letter-spacing:-.3px;
+      margin:0;
+      font-size:18px;
+    }
+    .sub{
+      margin:4px 0 0;
+      color:var(--muted);
+      font-size:13px;
+    }
+    .pricebox{
+      text-align:right;
+      min-width: 170px;
+    }
+    .old{
+      color: rgba(183,195,230,.75);
+      text-decoration: line-through;
+      font-size:12px;
+    }
+    .price{
+      font-size:22px;
+      font-weight:900;
+      letter-spacing:-.3px;
+      margin-top:2px;
+    }
+    .per{
+      margin-top:4px;
+      font-size:12px;
+      color: var(--muted);
+    }
+    ul.features{
+      margin:10px 0 0;
+      padding:0 0 0 18px;
+      color: var(--muted);
+      font-size:13px;
+      line-height:1.55;
+    }
+    .card-actions{
+      display:flex;
+      margin-top:auto; gap:10px; flex-wrap:wrap;
+      margin-top:14px;
+      padding-top:14px;
+      border-top:1px solid var(--line);
+      align-items:center;
+    }
+    .mini{
+      font-size:12px;
+      color: var(--muted);
+    }
+    .compare{
+      border:1px solid var(--line);
+      background: rgba(255,255,255,.03);
+      border-radius: var(--radius);
+      overflow:hidden;
+    }
+    table{
+      width:100%;
+      border-collapse: collapse;
+      font-size:13px;
+    }
+    th,td{
+      padding:12px 12px;
+      border-bottom:1px solid var(--line);
+      vertical-align:top;
+    }
+    th{
+      text-align:left;
+      color:#DDE6FF;
+      background: rgba(255,255,255,.04);
+      font-weight:800;
+      letter-spacing:-.2px;
+    }
+    tr:last-child td{border-bottom:none}
+    .muted{color:var(--muted)}
+    .pill{
+      display:inline-flex;
+      padding:5px 10px;
+      border-radius:999px;
+      border:1px solid var(--line);
+      background: rgba(255,255,255,.03);
+      color: var(--muted);
+      font-size:12px;
+      white-space:nowrap;
+    }
+    .pill.accent{border-color: rgba(42,124,255,.35); background: rgba(42,124,255,.12); color:#DDEBFF}
+    .pill.ok{border-color: rgba(74,222,128,.30); background: rgba(74,222,128,.10); color:#D8FFE6}
+    .formwrap{
+      display:grid;
+      grid-template-columns: 1fr 1fr;
+      gap:14px;
+    }
+    @media (max-width: 900px){ .formwrap{grid-template-columns:1fr} }
+    .form{
+      border:1px solid var(--line);
+      background: linear-gradient(180deg, rgba(255,255,255,.05), rgba(255,255,255,.02));
+      border-radius: var(--radius2);
+      padding:18px;
+      box-shadow: var(--shadow);
+    }
+    label{display:block; font-size:12px; color:var(--muted); margin:10px 0 6px}
+    input, select, textarea{
+      width:100%;
+      padding:12px 12px;
+      border-radius: 14px;
+      border:1px solid var(--line);
+      background: rgba(7,11,22,.55);
+      color: var(--text);
+      outline:none;
+    }
+    input:focus, select:focus, textarea:focus{border-color: rgba(42,124,255,.55); box-shadow: 0 0 0 6px rgba(42,124,255,.15)}
+    textarea{min-height:108px; resize:vertical}
+    .fineprint{
+      margin-top:10px;
+      font-size:12px;
+      color: rgba(183,195,230,.85);
+      line-height:1.5;
+    }
+    .footer{
+      padding:26px 0 48px;
+      border-top:1px solid var(--line);
+      margin-top: 18px;
+      color: var(--muted);
+      font-size:12px;
+    }
+    .bottombar{
+      position:fixed;
+      left:0; right:0; bottom:0;
+      padding:10px 12px;
+      background: rgba(7,11,22,.75);
+      border-top:1px solid var(--line);
+      backdrop-filter: blur(10px);
+      display:none;
+      z-index:40;
+    }
+    .bottombar .row{
+      display:flex; gap:10px; align-items:center; justify-content:space-between;
+      max-width: var(--max);
+      margin:0 auto;
+    }
+    .bottombar .row .mini{display:none}
+    @media (max-width: 720px){
+      .bottombar{display:block}
+      .bottombar .row .mini{display:block}
+    }
+  
+    .carimg{
+      width:100%;
+      height:auto;
+      display:block;
+      border-radius: 16px;
+      border:1px solid var(--line);
+      background: rgba(255,255,255,.03);
+      aspect-ratio: 16 / 9;
+      object-fit: cover;
+      box-shadow: 0 10px 30px rgba(0,0,0,.35);
+      margin-bottom: 12px;
+    }
+    .imgcap{
+      margin: -6px 0 10px;
+      color: rgba(183,195,230,.85);
+      font-size:12px;
+    }
+
+  
+        }
+  
+    /* Stronger visual crop to hide watermark */
+    .carimg{
+      object-fit: cover;
+      object-position: 50% 25%; /* move image further up */
+    }
+    @media (max-width: 600px){
+      .carimg{ object-position: 50% 30%; }
+    }
+
+  
+/* Equal height cards fix */
+.cards{
+  display:grid;
+  grid-template-columns: repeat(2, minmax(0,1fr));
+  gap:20px;
+}
+.card{
+  display:flex;
+  flex-direction:column;
+  height:100%;
+}
+.card .imgwrap{
+  aspect-ratio: 16 / 9;
+  overflow:hidden;
+}
+.card .imgwrap img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+}
+.card .content{
+  display:flex;
+  flex-direction:column;
+  flex:1;
+}
+.card .card-actions{
+  margin-top:auto;
+}
+
+    /* Top typography tightening */
+    h1{
+      font-size: 34px;
+      line-height: 1.12;
+      margin: 10px 0 10px;
+      letter-spacing: -0.5px;
+    }
+    .hero{ padding: 22px 0 18px; }
+    .features{ margin-top: 10px !important; }
+
+  
+    /* Contact section (photo + map) */
+    .contact-grid{
+      display:grid;
+      grid-template-columns: 1fr 1fr;
+      gap:22px;
+      align-items:stretch;
+    }
+    .contact-photo .carimg{
+      aspect-ratio: 16 / 10;
+      object-position: 50% 50%;
+    }
+    .mapwrap{
+      border-radius: 16px;
+      overflow:hidden;
+      border:1px solid var(--line);
+      background: rgba(255,255,255,.03);
+      aspect-ratio: 16 / 10;
+    }
+    .mapwrap iframe{
+      width:100%;
+      height:100%;
+      border:0;
+      display:block;
+    }
+    .addr{
+      margin-top:14px;
+      padding-top:14px;
+      border-top:1px solid var(--line);
+      color: rgba(235,242,255,.92);
+    }
+    .addr-title{
+      font-weight: 800;
+      margin-bottom: 6px;
+    }
+    .addr-line{
+      color: rgba(183,195,230,.95);
+      line-height:1.5;
+    }
+    
+
+  
+    /* Force image and map side-by-side on all screen sizes */
+    .contact-grid{
+      display:grid !important;
+      grid-template-columns: 1fr 1fr !important;
+      gap:22px;
+      align-items:stretch;
+    }
+
+
+
+    /* Contact visual – photo + map (ALATI kõrvuti, aga lehe laiusega) */
+    .contact-visual{ padding: 56px 0; }
+    .contact-visual .contact-grid{
+      display:grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 24px;
+      align-items: stretch;
+    }
+    .contact-photo img,
+    .contact-map iframe{
+      width:100%;
+      height:100%;
+      aspect-ratio: 16 / 9;
+      border-radius: 18px;
+      border: 1px solid rgba(255,255,255,0.14);
+      background: rgba(0,0,0,0.25);
+      display:block;
+    }
+    .contact-photo img{ object-fit: cover; }
+    .contact-map iframe{ border:0; }
+
+  
+
+.dealer-table{
+  width:100%;
+  max-width:720px;
+  margin-bottom:32px;
+  border-collapse:collapse;
+}
+.dealer-table th{
+  text-align:left;
+  padding:12px 8px;
+  font-size:18px;
+}
+.dealer-table td{
+  padding:8px;
+  border-top:1px solid rgba(255,255,255,0.12);
+}
+.dealer-table a{ color:#7db4ff; text-decoration:none; }
+
+.dealer-visual{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:24px;
+}
+.dealer-visual img,
+.dealer-visual iframe{
+  width:100%;
+  aspect-ratio:16/9;
+  border-radius:16px;
+  border:1px solid rgba(255,255,255,0.15);
+}
+
+
+/* Dealer visual – ONLY image + map, side by side */
+.dealer-visual{
+  margin-top:32px;
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:24px;
+}
+.dealer-visual img,
+.dealer-visual iframe{
+  width:100%;
+  aspect-ratio:16/9;
+  border-radius:16px;
+  border:1px solid rgba(255,255,255,0.15);
+}
+
+
+/* Dealer contact side-by-side */
+.dealer-contact-sbs{ padding:56px 0; }
+.dealer-grid{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:32px;
+  align-items:stretch;
+}
+.dealer-info,
+.dealer-photo{
+  background:rgba(255,255,255,0.03);
+  border:1px solid rgba(255,255,255,0.12);
+  border-radius:16px;
+  padding:24px;
+}
+.dealer-photo img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  aspect-ratio:16/9;
+  border-radius:12px;
+}
+.dealer-info h3{
+  margin:0 0 16px 0;
+}
+.dealer-table{
+  width:100%;
+  border-collapse:collapse;
+}
+.dealer-table td{
+  padding:8px 0;
+  border-bottom:1px solid rgba(255,255,255,0.12);
+}
+.dealer-table a{ color:#7db4ff; text-decoration:none; }
+
+</style>
+
+</head>
+
+<body>
+  
+
+  <main id="top" class="container">
+    <section class="hero">
+      <div class="hero-grid">
+        <div class="hero-card">
+          <div class="kicker"><i></i> BYD Inchcape Tartu erilise aasta pakkumised</div>
+          
+<h1>Vali BYD, kui…</h1>
+<ul class="features" style="margin-top:12px;">
+  <li>sinu jaoks on varustuses olulised märksõnad nagu <strong>360° kaamera, adaptiivne püsikiirusehoidja, panoraamkatus</strong> ning <strong>võtmeta avamine ja käivitus</strong>.</li>
+  <li>sa vajad <strong>praktilist keret ja head ruumikust</strong> – sobib pereautoks, kus <strong>kütusekulu ja mugavus peavad koos töötama</strong>.</li>
+  <li>sa tahad <strong>„ühe autoga kõik“</strong> lahendust: jõudlus, nelikvedu ja elektriline igapäevasõit <strong>ilma kompromissita</strong>.</li>
+  <li>sinu jaoks on otsustavaks argumendiks <strong>kiire tarne ja selge hinnasääst</strong> – vähem ootamist, rohkem väärtust.</li>
+  <li>sa otsid <strong>mõistlikku hinda ja täisvarustust</strong>, parimat <strong>value for money</strong> elektriautode seas.</li>
+  <li>sa ei taha <strong>järjekordset SUV-i</strong> – <strong>sedaan</strong> pakub teistsugust hoiakut ja puhtamat sõidutunnet.</li>
+</ul>
+
+<section id="laos">
+      <div class="grid">
+        <article class="card"><div class="imgwrap"><img class="carimg" src="https://lh3.googleusercontent.com/gps-cs-s/AG0ilSzKzsZ2AXKJM5ggbCKOgWinR5Pd0Ub7EdvVqNO71h5jMb-n7iGYgIRQ9TmLmq__QcwMwqcffItlbkku-AAbrrhN4vEBAsIKaboR15ydGFi6pEqbfSLzi2LWzTxdm2zgRFnQ164CAyjPfOwZ=s680-w680-h510-rw" loading="lazy" /></div>
+          
+<div class="content"><h3 class="model">BYD Seal U DM-i Boost 1.5 Pistikhübriid</h3>
+<p class="sub" style="margin:8px 0 0; color:#cfd6e4; font-size:13px; line-height:1.45;">Pistikhübriid · FWD · Aku 18.3 kWh · Elekter kuni 80 km · Kokku kuni 1080 km · CO₂ 21 g/km</p>
+
+<div class="card-actions">
+            <a class="btn" href="https://byd.com.ee/kuesi-pakkumist/" >Küsi pakkumist</a> 
+            <a class="btn secondary" href="https://www.auto24.ee/soidukid/4254154" target="_blank" rel="noopener">Vaata Auto24 kuulutust</a>
+            
+          </div>
+</div></article>
+
+        <article class="card"><div class="imgwrap"><img class="carimg" src="https://lh3.googleusercontent.com/gps-cs-s/AG0ilSzjld7YEkE8qUyYLN7LddrrHvCxm6qAxeuBhStTJksyLVtBtBKzkesD1Uff-eacXsuF7_UjUhIRUiAzQm-geE-9C-zs0ugSP1V32rzKY0v3s5Jy-_2gO0FFZst9jvpfn3GZVXyGUU3PsTYC=s680-w680-h510-rw" loading="lazy" /></div>
+          
+<div class="content"><h3 class="model">BYD Sealion 7 Design AWD</h3>
+<p class="sub" style="margin:8px 0 0; color:#cfd6e4; font-size:13px; line-height:1.45;">BEV · AWD · Aku 82.5 kWh · WLTP 456 km · DC 150 kW · 0–100 4,5 s</p>
+
+<div class="card-actions">
+            <a class="btn" href="https://byd.com.ee/kuesi-pakkumist/" >Küsi pakkumist</a> 
+            <a class="btn secondary" href="https://www.auto24.ee/soidukid/4226004" target="_blank" rel="noopener">Vaata Auto24 kuulutust</a>
+            
+          </div>
+</div></article>
+
+        <article class="card"><div class="imgwrap"><img class="carimg" src="https://lh3.googleusercontent.com/gps-cs-s/AG0ilSy8ORg9-o_Izbr7_WOSsIsuUpO5rJJ5Wb5L6i6isRztjAT29Xozd0_2i5VZb0msrjpVPwxDi2teo9Kx6Ispl-B0n_Hqwk7ccL3yvaNUBY9y9RvxwclrDPG_uZeVytGdwddgil1b8Xtmhpg=s680-w680-h510-rw" loading="lazy" /></div>
+          
+<div class="content"><h3 class="model">BYD Atto 3 Design</h3>
+<p class="sub" style="margin:8px 0 0; color:#cfd6e4; font-size:13px; line-height:1.45;">BEV · FWD · Aku 60 kWh · WLTP 420 km · DC 88 kW · Soojuspump</p>
+
+<div class="card-actions">
+            <a class="btn" href="https://byd.com.ee/kuesi-pakkumist/" >Küsi pakkumist</a> 
+            <a class="btn secondary" href="https://www.auto24.ee/soidukid/4267988" target="_blank" rel="noopener">Vaata Auto24 kuulutust</a>
+            
+          </div>
+</div></article>
+
+        <article class="card"><div class="imgwrap"><img class="carimg" src="https://lh3.googleusercontent.com/gps-cs-s/AG0ilSwmp2qtJm9wjaPnSk71Nyq3aCCiclUWnhTu8gOs1snRLDAJxvsTF-D0VpE1J5NtPqmvrnwhXecMjPPDcyCWSPRJz9M9-44ggWnWkLQnpmLGOi1jZ-CR2m75o8L8kM9Zrgc8N_-mmgIdPN8X=s680-w680-h510-rw" loading="lazy" /></div>
+          
+<div class="content"><h3 class="model">BYD Seal Design</h3>
+<p class="sub" style="margin:8px 0 0; color:#cfd6e4; font-size:13px; line-height:1.45;">BEV · RWD · Aku 82.5 kWh · WLTP 570 km · DC 150 kW · 0–100 5,9 s</p>
+
+<div class="card-actions">
+            <a class="btn" href="https://byd.com.ee/kuesi-pakkumist/" >Küsi pakkumist</a> 
+            <a class="btn secondary" href="https://www.auto24.ee/soidukid/4268007" target="_blank" rel="noopener">Vaata Auto24 kuulutust</a>
+            
+          </div>
+</div></article>
+      </div>
+    </section>
+
+<section id="vordlus">
+  <div class="compare" role="region" aria-label="Hinnatabel">
+    <table>
+      <thead>
+        <tr>
+          <th>Mudel</th>
+          <th>Hind</th>
+          <th>Soodushind</th>
+          <th>Allahindlus</th>
+          <th>Kuumakse</th>
+          <th>Kellele sobib</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>BYD Seal U DM-i Boost</strong></td>
+          <td>39 980 €</td>
+          <td><strong>36 990 €</strong></td>
+          <td>2 990 €</td>
+          <td>364 €</td>
+          <td>Kui soovid elektrilist igapäevasõitu, kuid ei taha sõltuda laadimisest.</td>
+        </tr>
+        <tr>
+          <td><strong>BYD Atto 3 Design</strong></td>
+          <td>41 240 €</td>
+          <td><strong>35 919 €</strong></td>
+          <td>5 321 €</td>
+          <td>375 €</td>
+          <td>Kui otsid taskukohast ja hästi varustatud täiselektrilist linnamaasturit.</td>
+        </tr>
+        <tr>
+          <td><strong>BYD Seal Design</strong></td>
+          <td>48 980 €</td>
+          <td><strong>44 990 €</strong></td>
+          <td>3 990 €</td>
+          <td>478 €</td>
+          <td>Kui eelistad sportlikumat sedaani ja vaikset maanteesõitu.</td>
+        </tr>
+        <tr>
+          <td><strong>BYD Sealion 7 Design AWD</strong></td>
+          <td>54 090 €</td>
+          <td><strong>51 990 €</strong></td>
+          <td>2 100 €</td>
+          <td>552 €</td>
+          <td>Kui tahad jõudlust, nelikvedu ja premium-klassi tunnet.</td>
+        </tr>
+      </tbody>
+    </table>
+
+
+
+<section class="dealer-contact-sbs">
+  <div class="container">
+    <div class="dealer-grid">
+      <div class="dealer-info">
+        <h3>Inchcape Tartu BYD esindus</h3>
+        <table class="dealer-table">
+          <tr><td>Telefon</td><td><a href="tel:+3726550099">+372 6 550 099</a></td></tr>
+          <tr><td>Aadress</td><td>Kalda tee 13, 50703 Tartu, Tartumaa, Eesti</td></tr>
+          <tr><td>Koduleht</td><td><a href="https://www.byd.com/ee/" target="_blank">https://www.byd.com/ee/</a></td></tr>
+          <tr><td>Lahtioleku ajad</td><td>E–R 09:00–18:00</td></tr>
+        </table>
+      </div>
+
+      <div class="dealer-photo">
+        <img src="https://lh3.googleusercontent.com/gps-cs-s/AG0ilSzA0N72--MjjGkGEjFXm5xk8WQHdId6n38HmNl-FJOzgdDwnRpECAdwHWvnITUcztJH3u-siNQ9pdz3rNfjAiErwIIIjMnsS6E4HPmQX6_q-onByWvt0j_wGLTUnRWLIBHNkKspdXH6kkQJ=s680-w680-h510-rw" alt="Inchcape Tartu BYD esindus" loading="lazy">
+      </div>
+    </div>
+  </div>
+</section>
+
+</body>
+
+</html>
